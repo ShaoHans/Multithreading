@@ -5,3 +5,15 @@
 /1.1.暂停线程/obj/Debug
 /1.1.暂停线程/bin/Debug
 /.vs/多线程实战/v15/Server/sqlite3
+/1.2.线程等待/bin/Debug
+/1.2.线程等待/obj/Debug
+/1.3.终止线程/obj/Debug
+/1.3.终止线程/bin/Debug
+/1.4.检测线程状态/bin/Debug
+/1.4.检测线程状态/obj/Debug
+/1.5.线程优先级/bin/Debug
+/1.5.线程优先级/obj/Debug
+/1.6.前后台线程/bin/Debug
+/1.6.前后台线程/obj/Debug
+/Infrastructure/bin/Debug
+/Infrastructure/obj/Debug
