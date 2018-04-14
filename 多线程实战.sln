@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.5.线程优先级", "1.5.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.6.前后台线程", "1.6.前后台线程\1.6.前后台线程.csproj", "{131A39FE-9924-4CA0-8B00-2CBFAAEA7163}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.7.向线程传递参数", "1.7.向线程传递参数\1.7.向线程传递参数.csproj", "{76633936-F289-467E-AA8B-EA9F3BD004BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{131A39FE-9924-4CA0-8B00-2CBFAAEA7163}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{131A39FE-9924-4CA0-8B00-2CBFAAEA7163}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{131A39FE-9924-4CA0-8B00-2CBFAAEA7163}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76633936-F289-467E-AA8B-EA9F3BD004BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76633936-F289-467E-AA8B-EA9F3BD004BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76633936-F289-467E-AA8B-EA9F3BD004BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76633936-F289-467E-AA8B-EA9F3BD004BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{5B0E65AA-C6F7-4028-809B-D2F2461E5FC6} = {80108EF0-9C71-42B8-B420-534FA6868A8A}
 		{4907E34E-C2FD-4912-9AA1-526F37FDBE7D} = {80108EF0-9C71-42B8-B420-534FA6868A8A}
 		{131A39FE-9924-4CA0-8B00-2CBFAAEA7163} = {80108EF0-9C71-42B8-B420-534FA6868A8A}
+		{76633936-F289-467E-AA8B-EA9F3BD004BB} = {80108EF0-9C71-42B8-B420-534FA6868A8A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {011E5A01-B965-4678-9853-8C1EC27C560E}
