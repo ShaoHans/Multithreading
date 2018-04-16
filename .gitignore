@@ -23,3 +23,9 @@
 /1.8.Lock关键字/obj/Debug
 /1.9.使用Monitor类锁定资源/bin/Debug
 /1.9.使用Monitor类锁定资源/obj/Debug
+/2.1.原子操作/bin/Debug/netcoreapp2.0
+/2.1.原子操作/obj
+/2.2.使用Mutex类/bin/Debug/netcoreapp2.0
+/2.2.使用Mutex类/obj
+/2.3.使用SemaphoreSlim类/bin/Debug/netcoreapp2.0
+/2.3.使用SemaphoreSlim类/obj
