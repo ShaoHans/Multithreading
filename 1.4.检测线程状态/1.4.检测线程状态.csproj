@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5D56DE36-9D22-424D-9487-198B4D51C144}</ProjectGuid>
+    <ProjectGuid>{5B0E65AA-C6F7-4028-809B-D2F2461E5FC6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_1._1.暂停线程</RootNamespace>
-    <AssemblyName>1.1.暂停线程</AssemblyName>
+    <RootNamespace>_1._4.检测线程状态</RootNamespace>
+    <AssemblyName>1.4.检测线程状态</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

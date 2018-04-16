@@ -6,7 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Infrastructure;
 
-namespace _1._1.暂停线程
+namespace _1._2.线程等待
 {
     class Program
     {
@@ -14,10 +14,12 @@ namespace _1._1.暂停线程
         {
             Thread thread = new Thread(Common.PrintNumbersWithDelay);
             thread.Start();
-            Common.PrintNumbers();
+            
+            // 等待线程
+            thread.Join();
+
+            Console.WriteLine("打印完成！");
             Console.ReadKey();
         }
-
-        
     }
 }
