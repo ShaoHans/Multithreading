@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.6.前后台线程", "1.6.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.7.向线程传递参数", "1.7.向线程传递参数\1.7.向线程传递参数.csproj", "{76633936-F289-467E-AA8B-EA9F3BD004BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.8.Lock关键字", "1.8.Lock关键字\1.8.Lock关键字.csproj", "{52A200ED-C1E7-4613-8ACE-3F1912864EEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{76633936-F289-467E-AA8B-EA9F3BD004BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76633936-F289-467E-AA8B-EA9F3BD004BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76633936-F289-467E-AA8B-EA9F3BD004BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52A200ED-C1E7-4613-8ACE-3F1912864EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52A200ED-C1E7-4613-8ACE-3F1912864EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52A200ED-C1E7-4613-8ACE-3F1912864EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52A200ED-C1E7-4613-8ACE-3F1912864EEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +77,7 @@ Global
 		{4907E34E-C2FD-4912-9AA1-526F37FDBE7D} = {80108EF0-9C71-42B8-B420-534FA6868A8A}
 		{131A39FE-9924-4CA0-8B00-2CBFAAEA7163} = {80108EF0-9C71-42B8-B420-534FA6868A8A}
 		{76633936-F289-467E-AA8B-EA9F3BD004BB} = {80108EF0-9C71-42B8-B420-534FA6868A8A}
+		{52A200ED-C1E7-4613-8ACE-3F1912864EEE} = {80108EF0-9C71-42B8-B420-534FA6868A8A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {011E5A01-B965-4678-9853-8C1EC27C560E}
