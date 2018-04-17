@@ -27,11 +27,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.9.使用Monitor类锁定�
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.线程同步", "02.线程同步", "{801C67FA-8B65-4361-B9F9-A77C7C2D4A6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.1.原子操作", "2.1.原子操作\2.1.原子操作.csproj", "{CACD5DC4-E0BF-4A42-ADC9-F437881AAF6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.1.原子操作", "2.1.原子操作\2.1.原子操作.csproj", "{CACD5DC4-E0BF-4A42-ADC9-F437881AAF6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.2.使用Mutex类", "2.2.使用Mutex类\2.2.使用Mutex类.csproj", "{AFE25733-F707-4665-B4EC-FBCEE62245FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.2.使用Mutex类", "2.2.使用Mutex类\2.2.使用Mutex类.csproj", "{AFE25733-F707-4665-B4EC-FBCEE62245FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.3.使用SemaphoreSlim类", "2.3.使用SemaphoreSlim类\2.3.使用SemaphoreSlim类.csproj", "{161E0EA1-A7B5-4690-BB7E-39BAB60D2318}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.3.使用SemaphoreSlim类", "2.3.使用SemaphoreSlim类\2.3.使用SemaphoreSlim类.csproj", "{161E0EA1-A7B5-4690-BB7E-39BAB60D2318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.4.使用AutoResetEvent类", "2.4.使用AutoResetEvent类\2.4.使用AutoResetEvent类.csproj", "{B8FFCFB6-A6F6-4C5A-A023-F4C0CF971FAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,6 +93,10 @@ Global
 		{161E0EA1-A7B5-4690-BB7E-39BAB60D2318}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{161E0EA1-A7B5-4690-BB7E-39BAB60D2318}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{161E0EA1-A7B5-4690-BB7E-39BAB60D2318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8FFCFB6-A6F6-4C5A-A023-F4C0CF971FAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8FFCFB6-A6F6-4C5A-A023-F4C0CF971FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8FFCFB6-A6F6-4C5A-A023-F4C0CF971FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8FFCFB6-A6F6-4C5A-A023-F4C0CF971FAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -108,6 +114,7 @@ Global
 		{CACD5DC4-E0BF-4A42-ADC9-F437881AAF6A} = {801C67FA-8B65-4361-B9F9-A77C7C2D4A6B}
 		{AFE25733-F707-4665-B4EC-FBCEE62245FF} = {801C67FA-8B65-4361-B9F9-A77C7C2D4A6B}
 		{161E0EA1-A7B5-4690-BB7E-39BAB60D2318} = {801C67FA-8B65-4361-B9F9-A77C7C2D4A6B}
+		{B8FFCFB6-A6F6-4C5A-A023-F4C0CF971FAD} = {801C67FA-8B65-4361-B9F9-A77C7C2D4A6B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {011E5A01-B965-4678-9853-8C1EC27C560E}
