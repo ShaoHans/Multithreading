@@ -35,6 +35,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.3.使用SemaphoreSlim类"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.4.使用AutoResetEvent类", "2.4.使用AutoResetEvent类\2.4.使用AutoResetEvent类.csproj", "{B8FFCFB6-A6F6-4C5A-A023-F4C0CF971FAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.4.使用ManualResetEventSlim类", "2.4.使用ManualResetEventSlim类\2.4.使用ManualResetEventSlim类.csproj", "{2E3CE1A3-47AA-4CF2-9CA8-8921BC1E0814}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,10 @@ Global
 		{B8FFCFB6-A6F6-4C5A-A023-F4C0CF971FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8FFCFB6-A6F6-4C5A-A023-F4C0CF971FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8FFCFB6-A6F6-4C5A-A023-F4C0CF971FAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E3CE1A3-47AA-4CF2-9CA8-8921BC1E0814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E3CE1A3-47AA-4CF2-9CA8-8921BC1E0814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E3CE1A3-47AA-4CF2-9CA8-8921BC1E0814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E3CE1A3-47AA-4CF2-9CA8-8921BC1E0814}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -115,6 +121,7 @@ Global
 		{AFE25733-F707-4665-B4EC-FBCEE62245FF} = {801C67FA-8B65-4361-B9F9-A77C7C2D4A6B}
 		{161E0EA1-A7B5-4690-BB7E-39BAB60D2318} = {801C67FA-8B65-4361-B9F9-A77C7C2D4A6B}
 		{B8FFCFB6-A6F6-4C5A-A023-F4C0CF971FAD} = {801C67FA-8B65-4361-B9F9-A77C7C2D4A6B}
+		{2E3CE1A3-47AA-4CF2-9CA8-8921BC1E0814} = {801C67FA-8B65-4361-B9F9-A77C7C2D4A6B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {011E5A01-B965-4678-9853-8C1EC27C560E}

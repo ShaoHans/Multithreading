@@ -9,6 +9,7 @@ namespace _2._4.使用AutoResetEvent类
     {
         //false：无信号，子线程的WaitOne方法不会被自动调用；
         //true：有信号，子线程的WaitOne方法会被自动调用。
+        // 只有一个线程可以看到信号的改变
         static AutoResetEvent _resetEvent = new AutoResetEvent(false);
         static int number = -1;
 
