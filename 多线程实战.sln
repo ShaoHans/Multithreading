@@ -47,6 +47,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.线程池", "03.线程�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.1.在线程池中调用委托", "3.1.在线程池中调用委托\3.1.在线程池中调用委托.csproj", "{C8990495-9AA4-4920-9594-38E957BF2246}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.2.向线程池中放入异步操作", "3.2.向线程池中放入异步操作\3.2.向线程池中放入异步操作.csproj", "{B86E7C23-3D69-4FAA-B756-562D8F3E486C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.3.线程池与并行度", "3.3.线程池与并行度\3.3.线程池与并行度.csproj", "{F693459D-978F-4264-A873-D9278690FEBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.4.取消异步操作", "3.4.取消异步操作\3.4.取消异步操作.csproj", "{D9E39152-6414-47F8-BC67-2276A725E383}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.5.在线程池中使用等待事件处理器及超时", "3.5.在线程池中使用等待事件处理器及超时\3.5.在线程池中使用等待事件处理器及超时.csproj", "{B384CD80-BB3C-4FEF-A3D9-1D66A1E8D63E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +137,22 @@ Global
 		{C8990495-9AA4-4920-9594-38E957BF2246}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8990495-9AA4-4920-9594-38E957BF2246}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8990495-9AA4-4920-9594-38E957BF2246}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B86E7C23-3D69-4FAA-B756-562D8F3E486C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B86E7C23-3D69-4FAA-B756-562D8F3E486C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B86E7C23-3D69-4FAA-B756-562D8F3E486C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B86E7C23-3D69-4FAA-B756-562D8F3E486C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F693459D-978F-4264-A873-D9278690FEBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F693459D-978F-4264-A873-D9278690FEBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F693459D-978F-4264-A873-D9278690FEBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F693459D-978F-4264-A873-D9278690FEBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9E39152-6414-47F8-BC67-2276A725E383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9E39152-6414-47F8-BC67-2276A725E383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9E39152-6414-47F8-BC67-2276A725E383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9E39152-6414-47F8-BC67-2276A725E383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B384CD80-BB3C-4FEF-A3D9-1D66A1E8D63E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B384CD80-BB3C-4FEF-A3D9-1D66A1E8D63E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B384CD80-BB3C-4FEF-A3D9-1D66A1E8D63E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B384CD80-BB3C-4FEF-A3D9-1D66A1E8D63E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -152,6 +176,10 @@ Global
 		{5F10D317-955E-4BEB-B03B-558593B93988} = {801C67FA-8B65-4361-B9F9-A77C7C2D4A6B}
 		{943BD97E-B61A-42FA-82E5-743A58FD122F} = {801C67FA-8B65-4361-B9F9-A77C7C2D4A6B}
 		{C8990495-9AA4-4920-9594-38E957BF2246} = {66D7389E-9F5A-4C47-A2BB-7EBEAE948A35}
+		{B86E7C23-3D69-4FAA-B756-562D8F3E486C} = {66D7389E-9F5A-4C47-A2BB-7EBEAE948A35}
+		{F693459D-978F-4264-A873-D9278690FEBD} = {66D7389E-9F5A-4C47-A2BB-7EBEAE948A35}
+		{D9E39152-6414-47F8-BC67-2276A725E383} = {66D7389E-9F5A-4C47-A2BB-7EBEAE948A35}
+		{B384CD80-BB3C-4FEF-A3D9-1D66A1E8D63E} = {66D7389E-9F5A-4C47-A2BB-7EBEAE948A35}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {011E5A01-B965-4678-9853-8C1EC27C560E}
