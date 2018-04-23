@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.2.从任务中获取结�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.3.组合任务", "4.3.组合任务\4.3.组合任务.csproj", "{C37424E6-5A77-4F33-86A2-8162E27D88CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.4.取消任务", "4.4.取消任务\4.4.取消任务.csproj", "{8CEA8BC3-4375-4995-AD71-C4378C268F8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -173,6 +175,10 @@ Global
 		{C37424E6-5A77-4F33-86A2-8162E27D88CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C37424E6-5A77-4F33-86A2-8162E27D88CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C37424E6-5A77-4F33-86A2-8162E27D88CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CEA8BC3-4375-4995-AD71-C4378C268F8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CEA8BC3-4375-4995-AD71-C4378C268F8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CEA8BC3-4375-4995-AD71-C4378C268F8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CEA8BC3-4375-4995-AD71-C4378C268F8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -203,6 +209,7 @@ Global
 		{04AC623A-F905-4970-9CCE-27EDA89A9021} = {2D4D75BA-F9C1-4279-99BF-E7D6D2D3AC2C}
 		{A6CA19D0-895C-463D-B233-FE6524725DCE} = {2D4D75BA-F9C1-4279-99BF-E7D6D2D3AC2C}
 		{C37424E6-5A77-4F33-86A2-8162E27D88CF} = {2D4D75BA-F9C1-4279-99BF-E7D6D2D3AC2C}
+		{8CEA8BC3-4375-4995-AD71-C4378C268F8B} = {2D4D75BA-F9C1-4279-99BF-E7D6D2D3AC2C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {011E5A01-B965-4678-9853-8C1EC27C560E}
