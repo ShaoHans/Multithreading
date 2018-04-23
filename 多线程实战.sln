@@ -67,6 +67,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.4.取消任务", "4.4.取
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.5.处理任务中的异常", "4.5.处理任务中的异常\4.5.处理任务中的异常.csproj", "{60563ADD-D78A-4C28-88C2-571AAAE92E63}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.6.并行运行任务", "4.6.并行运行任务\4.6.并行运行任务.csproj", "{B3794C94-A91A-4F12-9196-7F2D2873AE32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -185,6 +187,10 @@ Global
 		{60563ADD-D78A-4C28-88C2-571AAAE92E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60563ADD-D78A-4C28-88C2-571AAAE92E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60563ADD-D78A-4C28-88C2-571AAAE92E63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3794C94-A91A-4F12-9196-7F2D2873AE32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3794C94-A91A-4F12-9196-7F2D2873AE32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3794C94-A91A-4F12-9196-7F2D2873AE32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3794C94-A91A-4F12-9196-7F2D2873AE32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -217,6 +223,7 @@ Global
 		{C37424E6-5A77-4F33-86A2-8162E27D88CF} = {2D4D75BA-F9C1-4279-99BF-E7D6D2D3AC2C}
 		{8CEA8BC3-4375-4995-AD71-C4378C268F8B} = {2D4D75BA-F9C1-4279-99BF-E7D6D2D3AC2C}
 		{60563ADD-D78A-4C28-88C2-571AAAE92E63} = {2D4D75BA-F9C1-4279-99BF-E7D6D2D3AC2C}
+		{B3794C94-A91A-4F12-9196-7F2D2873AE32} = {2D4D75BA-F9C1-4279-99BF-E7D6D2D3AC2C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {011E5A01-B965-4678-9853-8C1EC27C560E}
