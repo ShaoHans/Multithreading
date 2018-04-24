@@ -83,6 +83,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.5.处理异步操作中�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.7.使用TaskScheduler配置任务的执行", "4.7.使用TaskScheduler配置任务的执行\4.7.使用TaskScheduler配置任务的执行.csproj", "{448EBE49-E0CD-4D38-88C5-04ADA2FD6BA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.6.使用async_void方法", "5.6.使用async_void方法\5.6.使用async_void方法.csproj", "{96F2B91D-7E74-48A2-BE5A-B024E7BFD5F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.7.实现自定义的awaitable类型", "5.7.实现自定义的awaitable类型\5.7.实现自定义的awaitable类型.csproj", "{AB7EDFDD-B2F1-4250-9084-4EDEA1795FD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.8.对动态类型使用await", "5.8.对动态类型使用await\5.8.对动态类型使用await.csproj", "{91DE99D3-4BAA-4775-9573-14C5EAB1AF4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -229,6 +235,18 @@ Global
 		{448EBE49-E0CD-4D38-88C5-04ADA2FD6BA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{448EBE49-E0CD-4D38-88C5-04ADA2FD6BA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{448EBE49-E0CD-4D38-88C5-04ADA2FD6BA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96F2B91D-7E74-48A2-BE5A-B024E7BFD5F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96F2B91D-7E74-48A2-BE5A-B024E7BFD5F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96F2B91D-7E74-48A2-BE5A-B024E7BFD5F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96F2B91D-7E74-48A2-BE5A-B024E7BFD5F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB7EDFDD-B2F1-4250-9084-4EDEA1795FD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB7EDFDD-B2F1-4250-9084-4EDEA1795FD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB7EDFDD-B2F1-4250-9084-4EDEA1795FD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB7EDFDD-B2F1-4250-9084-4EDEA1795FD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91DE99D3-4BAA-4775-9573-14C5EAB1AF4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91DE99D3-4BAA-4775-9573-14C5EAB1AF4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91DE99D3-4BAA-4775-9573-14C5EAB1AF4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91DE99D3-4BAA-4775-9573-14C5EAB1AF4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -268,6 +286,9 @@ Global
 		{A142D3B2-5216-4162-9572-CBDD4E096865} = {87B58276-FF31-4893-A7D8-F045E5494EE2}
 		{CF2EBCFD-1B9E-450A-A925-B9F1ADE019B8} = {87B58276-FF31-4893-A7D8-F045E5494EE2}
 		{448EBE49-E0CD-4D38-88C5-04ADA2FD6BA5} = {2D4D75BA-F9C1-4279-99BF-E7D6D2D3AC2C}
+		{96F2B91D-7E74-48A2-BE5A-B024E7BFD5F5} = {87B58276-FF31-4893-A7D8-F045E5494EE2}
+		{AB7EDFDD-B2F1-4250-9084-4EDEA1795FD1} = {87B58276-FF31-4893-A7D8-F045E5494EE2}
+		{91DE99D3-4BAA-4775-9573-14C5EAB1AF4F} = {87B58276-FF31-4893-A7D8-F045E5494EE2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {011E5A01-B965-4678-9853-8C1EC27C560E}

@@ -664,25 +664,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yunchang\\.nuget\\packages\\": {},
+    "C:\\Users\\shz\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DemoCode\\Multithreading\\2.4.使用ManualResetEventSlim类\\2.4.使用ManualResetEventSlim类.csproj",
+      "projectUniqueName": "E:\\work\\code\\Multithreading\\2.4.使用ManualResetEventSlim类\\2.4.使用ManualResetEventSlim类.csproj",
       "projectName": "2.4.使用ManualResetEventSlim类",
-      "projectPath": "D:\\DemoCode\\Multithreading\\2.4.使用ManualResetEventSlim类\\2.4.使用ManualResetEventSlim类.csproj",
-      "packagesPath": "C:\\Users\\yunchang\\.nuget\\packages\\",
-      "outputPath": "D:\\DemoCode\\Multithreading\\2.4.使用ManualResetEventSlim类\\obj\\",
+      "projectPath": "E:\\work\\code\\Multithreading\\2.4.使用ManualResetEventSlim类\\2.4.使用ManualResetEventSlim类.csproj",
+      "packagesPath": "C:\\Users\\shz\\.nuget\\packages\\",
+      "outputPath": "E:\\work\\code\\Multithreading\\2.4.使用ManualResetEventSlim类\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\yunchang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\shz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
@@ -690,7 +690,8 @@
         "netcoreapp2.0"
       ],
       "sources": {
-        "http://192.168.1.253:8100/nuget": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\shz\\.dotnet\\NuGetFallbackFolder": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
