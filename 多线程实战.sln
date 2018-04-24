@@ -79,6 +79,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.3.对连续的异步任�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.4.对并行执行的异步任务使用await操作符", "5.4.对并行执行的异步任务使用await操作符\5.4.对并行执行的异步任务使用await操作符.csproj", "{A142D3B2-5216-4162-9572-CBDD4E096865}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.5.处理异步操作中的异常", "5.5.处理异步操作中的异常\5.5.处理异步操作中的异常.csproj", "{CF2EBCFD-1B9E-450A-A925-B9F1ADE019B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.7.使用TaskScheduler配置任务的执行", "4.7.使用TaskScheduler配置任务的执行\4.7.使用TaskScheduler配置任务的执行.csproj", "{448EBE49-E0CD-4D38-88C5-04ADA2FD6BA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -217,6 +221,14 @@ Global
 		{A142D3B2-5216-4162-9572-CBDD4E096865}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A142D3B2-5216-4162-9572-CBDD4E096865}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A142D3B2-5216-4162-9572-CBDD4E096865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF2EBCFD-1B9E-450A-A925-B9F1ADE019B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF2EBCFD-1B9E-450A-A925-B9F1ADE019B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF2EBCFD-1B9E-450A-A925-B9F1ADE019B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF2EBCFD-1B9E-450A-A925-B9F1ADE019B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{448EBE49-E0CD-4D38-88C5-04ADA2FD6BA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{448EBE49-E0CD-4D38-88C5-04ADA2FD6BA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{448EBE49-E0CD-4D38-88C5-04ADA2FD6BA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{448EBE49-E0CD-4D38-88C5-04ADA2FD6BA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -254,6 +266,8 @@ Global
 		{4EA5FA1D-FF81-412B-8ED4-1EA5D6100A7E} = {87B58276-FF31-4893-A7D8-F045E5494EE2}
 		{1D2C8918-8637-420C-A6B5-8D778437733E} = {87B58276-FF31-4893-A7D8-F045E5494EE2}
 		{A142D3B2-5216-4162-9572-CBDD4E096865} = {87B58276-FF31-4893-A7D8-F045E5494EE2}
+		{CF2EBCFD-1B9E-450A-A925-B9F1ADE019B8} = {87B58276-FF31-4893-A7D8-F045E5494EE2}
+		{448EBE49-E0CD-4D38-88C5-04ADA2FD6BA5} = {2D4D75BA-F9C1-4279-99BF-E7D6D2D3AC2C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {011E5A01-B965-4678-9853-8C1EC27C560E}
