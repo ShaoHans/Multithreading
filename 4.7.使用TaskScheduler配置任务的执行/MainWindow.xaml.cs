@@ -69,7 +69,7 @@ namespace _4._7.使用TaskScheduler配置任务的执行
             // task 并没有运行在线程池中，而是 FromCurrentSynchronizationContext  
             Task<string> task = TaskMethod(TaskScheduler.FromCurrentSynchronizationContext());
             //这句话将让UI线程等待直到UI线程完成task中的内容，但是等待中的UI线程没有办法操作，因此死锁！ 
-            string s = task.Result; 
+            //string s = task.Result; 
             task.ContinueWith(t => Mouse.OverrideCursor = null,
             CancellationToken.None,
             TaskContinuationOptions.None,

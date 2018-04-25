@@ -95,6 +95,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.1.使用ConcurrentDiction
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.2.使用ConcurrentQueue实现异步处理", "6.2.使用ConcurrentQueue实现异步处理\6.2.使用ConcurrentQueue实现异步处理.csproj", "{60E7ED24-183B-4DA8-A16B-86440FD55EE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.3.改变ConcurrentStack异步处理顺序", "6.3.改变ConcurrentStack异步处理顺序\6.3.改变ConcurrentStack异步处理顺序.csproj", "{10C6FF1E-54F0-4778-A83B-F5D2DB24A6B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.4.使用BlockingCollection进行异步处理", "6.4.使用BlockingCollection进行异步处理\6.4.使用BlockingCollection进行异步处理.csproj", "{0A03C4F4-6A6A-401D-B5C2-D30B698296E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -261,6 +265,14 @@ Global
 		{60E7ED24-183B-4DA8-A16B-86440FD55EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60E7ED24-183B-4DA8-A16B-86440FD55EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60E7ED24-183B-4DA8-A16B-86440FD55EE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10C6FF1E-54F0-4778-A83B-F5D2DB24A6B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10C6FF1E-54F0-4778-A83B-F5D2DB24A6B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10C6FF1E-54F0-4778-A83B-F5D2DB24A6B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10C6FF1E-54F0-4778-A83B-F5D2DB24A6B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A03C4F4-6A6A-401D-B5C2-D30B698296E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A03C4F4-6A6A-401D-B5C2-D30B698296E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A03C4F4-6A6A-401D-B5C2-D30B698296E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A03C4F4-6A6A-401D-B5C2-D30B698296E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -305,6 +317,8 @@ Global
 		{91DE99D3-4BAA-4775-9573-14C5EAB1AF4F} = {87B58276-FF31-4893-A7D8-F045E5494EE2}
 		{A1EC902B-0FF6-44C4-8EBC-31E798D9B9CF} = {D549E3FD-A0AE-4763-BFBF-3C700AA3142F}
 		{60E7ED24-183B-4DA8-A16B-86440FD55EE3} = {D549E3FD-A0AE-4763-BFBF-3C700AA3142F}
+		{10C6FF1E-54F0-4778-A83B-F5D2DB24A6B6} = {D549E3FD-A0AE-4763-BFBF-3C700AA3142F}
+		{0A03C4F4-6A6A-401D-B5C2-D30B698296E2} = {D549E3FD-A0AE-4763-BFBF-3C700AA3142F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {011E5A01-B965-4678-9853-8C1EC27C560E}
