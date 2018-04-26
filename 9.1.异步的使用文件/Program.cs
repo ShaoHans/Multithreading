@@ -16,6 +16,11 @@ namespace _9._1.异步的使用文件
         {
             Task t = ProcessIOAsync();
             t.Wait();
+            ThreadPool.GetMaxThreads(out int workerThreads, out int ioThreads);
+            Console.WriteLine($"{workerThreads},{ioThreads}");
+            ThreadPool.GetAvailableThreads(out workerThreads, out ioThreads);
+            Console.WriteLine($"{workerThreads},{ioThreads}");
+
             Console.ReadKey();
         }
 
