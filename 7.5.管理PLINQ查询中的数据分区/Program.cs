@@ -21,7 +21,7 @@ namespace _7._5.管理PLINQ查询中的数据分区
         static IEnumerable<string> GetProjects()
         {
             IList<string> projects = new List<string>();
-            for (int i = 1; i <= 11; i++)
+            for (int i = 1; i <= 20; i++)
             {
                 projects.Add($"项目{i}");
             }
@@ -46,7 +46,7 @@ namespace _7._5.管理PLINQ查询中的数据分区
     class StringPartitioner: Partitioner<string>
     {
         private readonly IEnumerable<string> _data;
-        public override bool SupportsDynamicPartitions => false;
+        public override bool SupportsDynamicPartitions { get { return false; } }
 
         public StringPartitioner(IEnumerable<string> data)
         {
