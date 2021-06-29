@@ -31,11 +31,11 @@ namespace _1._8.Lock关键字
 
             CounterWithLock counterWithLock = new CounterWithLock();
 
-            Thread tt1 = new Thread(() => { TestCounter(counterNoLock); });
+            Thread tt1 = new Thread(() => { TestCounter(counterWithLock); });
             tt1.Name = "tt1";
-            Thread tt2 = new Thread(() => { TestCounter(counterNoLock); });
+            Thread tt2 = new Thread(() => { TestCounter(counterWithLock); });
             tt2.Name = "tt2";
-            Thread tt3 = new Thread(() => { TestCounter(counterNoLock); });
+            Thread tt3 = new Thread(() => { TestCounter(counterWithLock); });
             tt3.Name = "tt3";
 
             tt1.Start();
