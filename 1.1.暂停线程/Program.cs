@@ -2,16 +2,15 @@
 using System.Threading;
 using Infrastructure;
 
-namespace _1._1.暂停线程
+namespace _1._1.暂停线程;
+
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Thread thread = new Thread(Common.PrintNumbersWithDelay);
-            thread.Start();
-            Common.PrintNumbers();
-            Console.ReadKey();
-        }
+        Thread thread = new Thread(Common.PrintNumbersWithDelay);
+        thread.Start();
+        Common.PrintNumbers();
+        Console.ReadKey();
     }
 }

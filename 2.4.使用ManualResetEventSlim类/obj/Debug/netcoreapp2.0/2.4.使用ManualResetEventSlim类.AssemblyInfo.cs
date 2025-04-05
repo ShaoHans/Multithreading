@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("2.4.使用ManualResetEventSlim类")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+403620fd26f4cd0d4de663bb873c3dd7de9c1dc3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa0f86a9da53d8cf3b197c32c72499681e6d3b94")]
 [assembly: System.Reflection.AssemblyProductAttribute("2.4.使用ManualResetEventSlim类")]
 [assembly: System.Reflection.AssemblyTitleAttribute("2.4.使用ManualResetEventSlim类")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
