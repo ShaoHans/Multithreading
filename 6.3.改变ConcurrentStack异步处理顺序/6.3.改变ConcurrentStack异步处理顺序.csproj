@@ -8,9 +8,10 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>_6._3.改变ConcurrentStack异步处理顺序</RootNamespace>
     <AssemblyName>6.3.改变ConcurrentStack异步处理顺序</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>

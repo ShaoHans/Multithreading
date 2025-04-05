@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using Infrastructure;
 
 namespace _1._1.暂停线程
@@ -17,7 +13,5 @@ namespace _1._1.暂停线程
             Common.PrintNumbers();
             Console.ReadKey();
         }
-
-        
     }
 }

@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>_3._5.在线程池中使用等待事件处理器及超时</RootNamespace>
     <AssemblyName>3.5.在线程池中使用等待事件处理器及超时</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />

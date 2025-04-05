@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>_3._3.线程池与并行度</RootNamespace>
     <AssemblyName>3.3.线程池与并行度</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
