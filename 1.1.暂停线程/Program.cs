@@ -1,6 +1,7 @@
-﻿using System;
+﻿using Infrastructure;
+
+using System;
 using System.Threading;
-using Infrastructure;
 
 namespace _1._1.暂停线程;
 

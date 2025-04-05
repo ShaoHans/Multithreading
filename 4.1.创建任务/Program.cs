@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -18,7 +15,7 @@ namespace _4._1.创建任务
 
             Task.Run(() => { TaskMethod("task3"); });
             Task.Factory.StartNew(() => { TaskMethod("task4"); });
-            Task.Factory.StartNew(() => { TaskMethod("task5"); }, TaskCreationOptions.LongRunning); 
+            Task.Factory.StartNew(() => { TaskMethod("task5"); }, TaskCreationOptions.LongRunning);
 
 
             Console.ReadKey();
@@ -27,7 +24,7 @@ namespace _4._1.创建任务
         static void TaskMethod(string taskName)
         {
             Console.WriteLine($"任务 {taskName} 正在运行，" +
-                $"线程id： {Thread.CurrentThread.ManagedThreadId}"+
+                $"线程id： {Thread.CurrentThread.ManagedThreadId}" +
                 $"，是否为线程池中的线程：{Thread.CurrentThread.IsThreadPoolThread}");
         }
     }

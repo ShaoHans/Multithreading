@@ -8,8 +8,9 @@ namespace _2._6.使用Barrier类
         // 当您需要一组任务并行地运行一连串的阶段，
         // 但是每一个阶段都要等待所有其他任务都完成前一阶段之后才能开始，
         // 你可以通过Barrier实例来同步这一类协同工作
-        static Barrier _barrier = new Barrier(3, b => {
-            Console.WriteLine($"=========当前是{b.CurrentPhaseNumber+1}阶段===============");
+        static Barrier _barrier = new Barrier(3, b =>
+        {
+            Console.WriteLine($"=========当前是{b.CurrentPhaseNumber + 1}阶段===============");
         });
 
         static void Test(string step1, string step2, string step3, int seconds)

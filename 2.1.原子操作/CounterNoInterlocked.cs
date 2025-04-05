@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace _2._1.原子操作
+﻿namespace _2._1.原子操作
 {
     public class CounterNoInterlocked : CounterBase
     {

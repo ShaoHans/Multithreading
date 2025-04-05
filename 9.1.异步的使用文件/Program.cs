@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -29,7 +28,7 @@ namespace _9._1.异步的使用文件
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < 100000; i++)
             {
-                sb.AppendLine($"{new Random(DateTime.Now.Millisecond).Next(0,99999)}");
+                sb.AppendLine($"{new Random(DateTime.Now.Millisecond).Next(0, 99999)}");
             }
             return sb.ToString();
         }
@@ -40,10 +39,10 @@ namespace _9._1.异步的使用文件
             using (var sr = new StreamReader(stream))
             {
                 long sum = 0;
-                while (sr.Peek()>-1)
+                while (sr.Peek() > -1)
                 {
                     string line = await sr.ReadLineAsync();
-                    sum += long.Parse(line); 
+                    sum += long.Parse(line);
                 }
                 return sum;
             }

@@ -2,9 +2,7 @@
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace _7._5.管理PLINQ查询中的数据分区
 {
@@ -43,7 +41,7 @@ namespace _7._5.管理PLINQ查询中的数据分区
         }
     }
 
-    class StringPartitioner: Partitioner<string>
+    class StringPartitioner : Partitioner<string>
     {
         private readonly IEnumerable<string> _data;
         public override bool SupportsDynamicPartitions { get { return false; } }

@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -53,7 +50,7 @@ namespace _4._4.取消任务
             for (int i = 0; i < seconds; i++)
             {
                 Thread.Sleep(TimeSpan.FromSeconds(1));
-                if(token.IsCancellationRequested)
+                if (token.IsCancellationRequested)
                 {
                     return -1;
                 }

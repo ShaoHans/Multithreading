@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Threading;
 using System.Linq;
+using System.Threading;
 
 namespace _2._4.使用AutoResetEvent类
 {

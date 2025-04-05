@@ -6,7 +6,7 @@ namespace _2._2.使用Mutex类
     class Program
     {
         static void Main(string[] args)
-        {            
+        {
             // 应用场景：WinForm应用程序只能启动一个
             string mutexName = "互斥量";
             using (var mutex = new Mutex(false, mutexName))

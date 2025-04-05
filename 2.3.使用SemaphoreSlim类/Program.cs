@@ -28,7 +28,8 @@ namespace _2._3.使用SemaphoreSlim类
             // 假设餐厅只有10个位置，但有15位顾客要吃饭，所以有5位顾客需要等待
             for (int i = 0; i < 15; i++)
             {
-                Thread t = new Thread(() => {
+                Thread t = new Thread(() =>
+                {
                     EatInDiningRoom(new Random().Next(2, 4));
                 });
                 t.Name = $"t{i}";

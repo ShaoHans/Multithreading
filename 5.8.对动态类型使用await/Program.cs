@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Dynamic;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -22,7 +19,7 @@ namespace _5._8.对动态类型使用await
             var sync = GetDynamicAwaitableObject(true);
             Console.WriteLine($"{await sync}");
 
-            var asyncTask =  GetDynamicAwaitableObject(false);
+            var asyncTask = GetDynamicAwaitableObject(false);
             Console.WriteLine($"{await asyncTask}");
         }
 

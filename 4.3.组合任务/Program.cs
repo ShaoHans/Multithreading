@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -39,7 +36,8 @@ namespace _4._3.组合任务
                 TaskContinuationOptions.OnlyOnRanToCompletion | TaskContinuationOptions.ExecuteSynchronously);
 
             // secondTask任务的后续操作的后续操作
-            continuation.GetAwaiter().OnCompleted(() => {
+            continuation.GetAwaiter().OnCompleted(() =>
+            {
                 Console.WriteLine($"后续操作continuation执行完成，" +
                     $"线程id： {Thread.CurrentThread.ManagedThreadId}" +
                     $"，是否为线程池中的线程：{Thread.CurrentThread.IsThreadPoolThread}");
@@ -48,7 +46,8 @@ namespace _4._3.组合任务
             Thread.Sleep(TimeSpan.FromSeconds(2));
             Console.WriteLine();
 
-            var thirdTask = new Task<int>(() => {
+            var thirdTask = new Task<int>(() =>
+            {
                 // 父子线程，只有所有子任务结束工作，父任务才会完成
                 var innerTask = Task.Factory.StartNew(() => TaskMethod("task4", 5), TaskCreationOptions.AttachedToParent);
                 // 也可以在子任务上运行后续操作，后续操作也会影响到父任务
@@ -57,7 +56,7 @@ namespace _4._3.组合任务
             });
             thirdTask.Start();
 
-            while(!thirdTask.IsCompleted)
+            while (!thirdTask.IsCompleted)
             {
                 Console.WriteLine($"任务3的状态：{thirdTask.Status}");
                 Thread.Sleep(TimeSpan.FromSeconds(0.5));
@@ -67,7 +66,7 @@ namespace _4._3.组合任务
             Console.ReadKey();
         }
 
-        static int TaskMethod(string taskName,int seconds)
+        static int TaskMethod(string taskName, int seconds)
         {
             Console.WriteLine($"任务 {taskName} 正在运行，" +
                 $"线程id： {Thread.CurrentThread.ManagedThreadId}" +

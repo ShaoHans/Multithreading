@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -47,7 +44,7 @@ namespace _5._1.使用await操作符获取异步任务结果
                 Console.WriteLine($"{await GetInfoAsync("Await task")}");
                 Console.WriteLine("AsynchronyWithAwait end");
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 Console.WriteLine(ex);
             }

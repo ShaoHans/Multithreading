@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -12,7 +10,7 @@ namespace _7._1.使用Parallel类
         static void Main(string[] args)
         {
             // 使用Parallel类处理并行任务
-            Parallel.Invoke(() => Process("task1"), 
+            Parallel.Invoke(() => Process("task1"),
                 () => Process("task2"),
                 () =>
                 {

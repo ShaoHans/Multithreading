@@ -2,9 +2,6 @@
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _6._1.使用ConcurrentDictionary
 {
@@ -23,7 +20,7 @@ namespace _6._1.使用ConcurrentDictionary
             sw.Start();
             for (int i = 0; i < 1000000; i++)
             {
-                lock(dict)
+                lock (dict)
                 {
                     dict[i] = Item;
                 }
@@ -42,7 +39,7 @@ namespace _6._1.使用ConcurrentDictionary
             sw.Restart();
             for (int i = 0; i < 1000000; i++)
             {
-                lock(dict)
+                lock (dict)
                 {
                     CurrentItem = dict[i];
                 }

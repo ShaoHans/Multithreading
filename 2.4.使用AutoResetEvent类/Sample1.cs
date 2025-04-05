@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 
 namespace _2._4.使用AutoResetEvent类
@@ -23,7 +21,7 @@ namespace _2._4.使用AutoResetEvent类
             {
                 Console.WriteLine($"Wirte线程写入数字：{i}");
                 number = i;
-                
+
                 //发信号，通知正在等待的读线程写入操作已完成
                 _resetEvent.Set();
 

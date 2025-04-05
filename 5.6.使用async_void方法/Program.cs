@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -84,7 +81,7 @@ namespace _5._6.使用async_void方法
         {
             Console.WriteLine($"{taskName}任务开始了");
             await Task.Delay(TimeSpan.FromSeconds(seconds));
-            if(taskName.Contains("Exception"))
+            if (taskName.Contains("Exception"))
             {
                 throw new Exception($"{taskName}炸了");
             }

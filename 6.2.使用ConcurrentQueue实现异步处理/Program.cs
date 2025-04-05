@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -75,7 +72,7 @@ namespace _6._2.使用ConcurrentQueue实现异步处理
             do
             {
                 dequeueSuccesful = queue.TryDequeue(out workItem);
-                if(dequeueSuccesful)
+                if (dequeueSuccesful)
                 {
                     Console.WriteLine($"任务{workItem.Id}被{name}号消费者消费");
                 }

@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace _3._5.在线程池中使用等待事件处理器及超时
 {
@@ -40,7 +36,7 @@ namespace _3._5.在线程池中使用等待事件处理器及超时
         {
             for (int i = 0; i < 6; i++)
             {
-                if(token.IsCancellationRequested)
+                if (token.IsCancellationRequested)
                 {
                     Console.WriteLine("异步操作被取消");
                     return;
@@ -51,16 +47,16 @@ namespace _3._5.在线程池中使用等待事件处理器及超时
             evt.Set();
         }
 
-        static void WorkerOperationWait(CancellationTokenSource cts,bool isTimeout)
+        static void WorkerOperationWait(CancellationTokenSource cts, bool isTimeout)
         {
-            if(isTimeout)
+            if (isTimeout)
             {
                 cts.Cancel();
                 Console.WriteLine("异步操作超时并被取消了");
             }
             else
             {
-                Console.WriteLine("异步操作完成"); 
+                Console.WriteLine("异步操作完成");
             }
         }
     }

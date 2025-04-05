@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace _3._4.取消异步操作
 {
@@ -90,7 +86,7 @@ namespace _3._4.取消异步操作
             Console.WriteLine("启动第三个异步操作");
             for (int i = 0; i < 5; i++)
             {
-                if(cancellationFlag)
+                if (cancellationFlag)
                 {
                     Console.WriteLine("第三个异步操作被取消啦~~~");
                     return;

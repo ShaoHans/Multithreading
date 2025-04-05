@@ -11,7 +11,7 @@ namespace _2._5.使用CountdownEvent类
         {
             Console.WriteLine($"{Thread.CurrentThread.Name}线程开始执行...");
             Thread.Sleep(TimeSpan.FromSeconds(seconds));
-            Console.WriteLine($"{Thread.CurrentThread.Name}线程执行完成！") ;
+            Console.WriteLine($"{Thread.CurrentThread.Name}线程执行完成！");
             _event.Signal();
         }
 
