@@ -2,41 +2,40 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace _5._3.对连续的异步任务使用await操作符
+namespace _5._3.对连续的异步任务使用await操作符;
+
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Task t = AsyncWithAwait();
-            //t.Wait();
-            Console.WriteLine("main");
-            Console.ReadKey();
-        }
+        Task t = AsyncWithAwait();
+        //t.Wait();
+        Console.WriteLine("main");
+        Console.ReadKey();
+    }
 
-        async static Task AsyncWithAwait()
+    static async Task AsyncWithAwait()
+    {
+        try
         {
-            try
-            {
-                string result = await GetInfoAsync("Async 1");
-                Console.WriteLine(result);
-                // 注意：Async2任务只有等待Async1任务完成之后才开始执行，不是和Async1并行执行
-                result = await GetInfoAsync("Async 2");
-                Console.WriteLine(result);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex);
-            }
+            string result = await GetInfoAsync("Async 1");
+            Console.WriteLine(result);
+            // 注意：Async2任务只有等待Async1任务完成之后才开始执行，不是和Async1并行执行
+            result = await GetInfoAsync("Async 2");
+            Console.WriteLine(result);
         }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+        }
+    }
 
-        async static Task<string> GetInfoAsync(string taskName)
-        {
-            Console.WriteLine($"{taskName}任务开始了");
-            await Task.Delay(TimeSpan.FromSeconds(2));
-            return $"任务 {taskName} 正在运行，" +
-                $"线程id： {Thread.CurrentThread.ManagedThreadId}" +
-                $"，是否为线程池中的线程：{Thread.CurrentThread.IsThreadPoolThread}";
-        }
+    static async Task<string> GetInfoAsync(string taskName)
+    {
+        Console.WriteLine($"{taskName}任务开始了");
+        await Task.Delay(TimeSpan.FromSeconds(2));
+        return $"任务 {taskName} 正在运行，"
+            + $"线程id： {Thread.CurrentThread.ManagedThreadId}"
+            + $"，是否为线程池中的线程：{Thread.CurrentThread.IsThreadPoolThread}";
     }
 }
