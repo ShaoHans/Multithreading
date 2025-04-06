@@ -11,8 +11,8 @@
     <FileVersion>1.0.0.0</FileVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Dynamitey" Version="2.0.9.136" />
-    <PackageReference Include="ImpromptuInterface" Version="7.0.1" />
+    <PackageReference Include="Dynamitey" Version="3.0.3" />
+    <PackageReference Include="ImpromptuInterface" Version="8.0.6" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
   </ItemGroup>
