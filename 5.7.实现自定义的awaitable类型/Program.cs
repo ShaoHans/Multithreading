@@ -3,81 +3,77 @@ using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace _5._7.实现自定义的awaitable类型
+namespace _5._7.实现自定义的awaitable类型;
+
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Task t = ProcessAsync();
-            t.Wait();
+        Task t = ProcessAsync();
+        t.Wait();
 
-            Console.ReadKey();
-        }
-
-        async static Task ProcessAsync()
-        {
-            var sync = new CustomAwaitable(true);
-            Console.WriteLine($"{await sync}");
-
-            var asyncTask = new CustomAwaitable(false);
-            Console.WriteLine($"{await asyncTask}");
-        }
+        Console.ReadKey();
     }
 
-    class CustomAwaitable
+    static async Task ProcessAsync()
     {
-        private readonly bool _completeSynchronously;
+        var sync = new CustomAwaitable(true);
+        Console.WriteLine($"{await sync}");
 
-        public CustomAwaitable(bool completeSynchronously)
-        {
-            _completeSynchronously = completeSynchronously;
-        }
+        var asyncTask = new CustomAwaitable(false);
+        Console.WriteLine($"{await asyncTask}");
+    }
+}
 
-        public CustomAwaiter GetAwaiter()
-        {
-            return new CustomAwaiter(_completeSynchronously);
-        }
+class CustomAwaitable
+{
+    private readonly bool _completeSynchronously;
+
+    public CustomAwaitable(bool completeSynchronously)
+    {
+        _completeSynchronously = completeSynchronously;
     }
 
-    class CustomAwaiter : INotifyCompletion
+    public CustomAwaiter GetAwaiter()
     {
-        private string _result = "同步完成";
-        private readonly bool _completeSynchronously;
+        return new CustomAwaiter(_completeSynchronously);
+    }
+}
 
-        public bool IsCompleted
-        {
-            get
-            {
-                return _completeSynchronously;
-            }
-        }
+class CustomAwaiter : INotifyCompletion
+{
+    private string _result = "同步完成";
+    private readonly bool _completeSynchronously;
 
-        public CustomAwaiter(bool completeSynchronously)
-        {
-            _completeSynchronously = completeSynchronously;
-        }
+    public bool IsCompleted
+    {
+        get { return _completeSynchronously; }
+    }
 
-        public string GetResult()
-        {
-            return _result;
-        }
+    public CustomAwaiter(bool completeSynchronously)
+    {
+        _completeSynchronously = completeSynchronously;
+    }
 
-        private string GetInfo()
-        {
-            return $"任务正在运行，" +
-                $"线程id： {Thread.CurrentThread.ManagedThreadId}" +
-                $"，是否为线程池中的线程：{Thread.CurrentThread.IsThreadPoolThread}";
-        }
+    public string GetResult()
+    {
+        return _result;
+    }
 
-        public void OnCompleted(Action continuation)
+    private string GetInfo()
+    {
+        return $"任务正在运行，"
+            + $"线程id： {Thread.CurrentThread.ManagedThreadId}"
+            + $"，是否为线程池中的线程：{Thread.CurrentThread.IsThreadPoolThread}";
+    }
+
+    public void OnCompleted(Action continuation)
+    {
+        ThreadPool.QueueUserWorkItem(state =>
         {
-            ThreadPool.QueueUserWorkItem(state =>
-            {
-                Thread.Sleep(TimeSpan.FromSeconds(1));
-                _result = GetInfo();
-                continuation?.Invoke();
-            });
-        }
+            Thread.Sleep(TimeSpan.FromSeconds(1));
+            _result = GetInfo();
+            continuation?.Invoke();
+        });
     }
 }
